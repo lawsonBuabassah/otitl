@@ -31,6 +31,58 @@
 
 </head>
 
+<style>
+.investments-tab {
+  padding: 20px;
+  background-color: #f9f9f9; /* A softer background color for the container */
+}
+
+.company {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of children */
+  justify-content: start; /* Aligns items to the start, keeping logo at the edge and text centered */
+  background-color: #fff; /* White background for each entry */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds depth with a soft shadow */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  overflow: hidden; /* Keeps children within the rounded corners */
+  margin-bottom: 20px; /* Space between entries */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
+}
+
+.company-logo {
+  width: 100px; /* Fixed width for logos */
+  height: 100px; /* Fixed height to maintain aspect ratio */
+  object-fit: contain; /* Ensures logos fit well without distortion */
+  margin-right: 20px; /* Space between the logo and the company info */
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers text vertically */
+  align-items: center; /* Centers text horizontally */
+  text-align: center; /* Ensures text lines are centered if they wrap */
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.company-name {
+  margin: 0;
+  font-size: 20px; /* Prominent font size for company name */
+  color: #333; /* Dark color for better readability */
+}
+
+.company-description {
+  font-size: 16px; /* Clear and professional font size for description */
+  color: #666; /* Subdued color for the description text */
+}
+
+.company:hover {
+  transform: translateY(-5px); /* Lift effect on hover for interactivity */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Deeper shadow on hover for visual depth */
+}
+
+</style>
 <body>
     <header class="header">
         <nav class="navbar">
@@ -64,8 +116,18 @@
             </div>
         </div>
     </header>
-    <section class="main" style="color: white;">
-        <p>BUILDING AN IDEAL WORLD-ONE VENTURE AT A TIME</p>
+    <section class="main"
+        style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
+        <section class="investments-tab">
+            <article class="company">
+              <img src="./images/bridgeborders.jpg" alt="Fledge Logo" class="company-logo">
+              <div class="company-info">
+                <h3 class="company-name">Fledge</h3>
+                <p class="company-description">Tech & finance recruiting platform</p>
+              </div>
+            </article>
+          </section>          
+          
     </section>
     <footer class="footer">
         <div class="footer-image"><img class="mr" src="./images/logo.jpg" alt="logo">
@@ -78,7 +140,7 @@
             </div>
             <div class="location-list mt">
                 <div class="location-item"><a href="#">us@otitl.com</a></div>
-                <div class="location-item">+1 (802) 526-9226</div>
+                <div class="location-item">+1 (603) 322-0064</div>
             </div>
         </div>
     </footer>

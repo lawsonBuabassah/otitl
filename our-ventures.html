@@ -31,6 +31,35 @@
 
 </head>
 
+<style>
+.ventures-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your layout */
+  margin: 0 auto;
+  position: relative;
+}
+
+.venture {
+  display: block;
+  flex: 0 0 50%; /* Adjust based on your needs */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.venture-logo {
+  max-width: 100px; /* Adjust size as needed */
+  transition: transform 0.3s ease;
+}
+
+.venture:hover .venture-logo {
+  transform: scale(1.1); /* Simple hover effect */
+}
+
+</style>
 <body>
     <header class="header">
         <nav class="navbar">
@@ -64,8 +93,16 @@
             </div>
         </div>
     </header>
-    <section class="main" style="color: white;">
-        <p>BUILDING AN IDEAL WORLD-ONE VENTURE AT A TIME</p>
+    <section class="main"
+        style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
+        <div class="ventures-container">
+            <a href="https://www.bridgeborders.org/" class="venture" target="_blank">
+              <img src="./images/bridgeborders.jpg" alt="The Bridgeborder Logo" class="venture-logo">
+            </a>
+            <a href="https://ekke.ltd" class="venture" target="_blank">
+              <img src="./images/ekke.png" alt="Ekke Ltd Logo" class="venture-logo">
+            </a>
+          </div>          
     </section>
     <footer class="footer">
         <div class="footer-image"><img class="mr" src="./images/logo.jpg" alt="logo">
@@ -78,7 +115,7 @@
             </div>
             <div class="location-list mt">
                 <div class="location-item"><a href="#">us@otitl.com</a></div>
-                <div class="location-item">+1 (802) 526-9226</div>
+                <div class="location-item">+1 (603) 322-0064</div>
             </div>
         </div>
     </footer>
