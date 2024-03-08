@@ -78,7 +78,7 @@ body{
 .menu{
     width: 350px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 1.1rem;
     padding-top: 3.5rem;
     font-weight: lighter;
