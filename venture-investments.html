@@ -28,70 +28,97 @@
     <meta name="twitter:description"
         content="&quot;Diversify. But carve out 10 to 20 percent for the most unloved part of the market: Emerging Markets Value&quot;, Robert D Annott. To carve out in Africa, partner with DreamBrıdge." />
     <meta name="twitter:image" content="./images/logo.jpg" />
+    <style>
+        .company-section {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
+        .company-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .company-logo {
+            max-width: 150px;
+            max-height: 150px;
+            width: auto;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .company-details {
+            flex-grow: 1;
+        }
+
+        .company-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .company-description {
+            font-size: 16px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .company-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .company-logo {
+                margin: 0 auto 20px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .company-name {
+                font-size: 20px;
+            }
+
+            .company-description {
+                font-size: 14px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+        }
+
+        .main{
+            overflow: auto;
+        }
+        .company-section > img{
+            width: 70px!important;
+        }
+
+        ::-webkit-scrollbar{
+            width: 1px;
+        }
+    </style>
 </head>
 
-<style>
-.investments-tab {
-  padding: 20px;
-  background-color: #f9f9f9; /* A softer background color for the container */
-}
-
-.company {
-  display: flex;
-  align-items: center; /* Ensures vertical alignment of children */
-  justify-content: start; /* Aligns items to the start, keeping logo at the edge and text centered */
-  background-color: #fff; /* White background for each entry */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds depth with a soft shadow */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  overflow: hidden; /* Keeps children within the rounded corners */
-  margin-bottom: 20px; /* Space between entries */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for interactions */
-}
-
-.company-logo {
-  width: 100px; /* Fixed width for logos */
-  height: 100px; /* Fixed height to maintain aspect ratio */
-  object-fit: contain; /* Ensures logos fit well without distortion */
-  margin-right: 20px; /* Space between the logo and the company info */
-}
-
-.company-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers text vertically */
-  align-items: center; /* Centers text horizontally */
-  text-align: center; /* Ensures text lines are centered if they wrap */
-  padding: 10px;
-  flex-grow: 1;
-}
-
-.company-name {
-  margin: 0;
-  font-size: 20px; /* Prominent font size for company name */
-  color: #333; /* Dark color for better readability */
-}
-
-.company-description {
-  font-size: 16px; /* Clear and professional font size for description */
-  color: #666; /* Subdued color for the description text */
-}
-
-.company:hover {
-  transform: translateY(-5px); /* Lift effect on hover for interactivity */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Deeper shadow on hover for visual depth */
-}
-
-</style>
 <body>
     <header class="header">
         <nav class="navbar">
             <div class="logo">
-                <img src="./images/logo.jpg" alt="">RCHID
+                <img src="./images/new-logo.png" alt="">
+                RCHID
             </div>
-            <ul class="nav">
+            <!-- <ul class="nav">
                 <span class="nav-item-static">Technology | Investment | Trading</span>
-            </ul>
+            </ul> -->
         </nav>
         <div class="header-bottom">
             <ul class="menu">
@@ -99,7 +126,7 @@
                     <fas class="fa fa-times close-btn"></fas>
                 </div>
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link active">Home</a>
+                    <a href="./" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="./our-ventures.html" class="nav-link">Our Ventures</a>
@@ -116,31 +143,113 @@
             </div>
         </div>
     </header>
-    <section class="main"
-        style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
-        <section class="investments-tab">
-            <article class="company">
-              <img src="./images/bridgeborders.jpg" alt="Fledge Logo" class="company-logo">
-              <div class="company-info">
-                <h3 class="company-name">Fledge</h3>
-                <p class="company-description">Tech & finance recruiting platform</p>
-              </div>
-            </article>
-          </section>          
-          
+    <section class="main" style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
+        <div class="company-section">
+            <img src="./images/bridgeborders.jpg" alt="Fledge Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">Fledge</div>
+                <!-- <div class="company-description">Tech & finance recruiting platform</div> -->
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/bridgeborders.jpg" alt="Company Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">Scaling @ <a href="http://gofledge.net">gofledge.net</a></div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/bridgeborders.jpg" alt="Company Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">Backing @ <a href="http://akilli.ai">akilli.ai</a></div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/1 O Analyst.png" alt="O Analyst Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Analyst</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/2 O Properties.png" alt="O Properties Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Properties</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/3 O News.png" alt="O News Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O News</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/4 O Cars.png" alt="Cars Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Cars</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/5 O Tech.png" alt="O Tech Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Tech</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/6 O pliances.png" alt="O pliances Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Pliances</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/7 O Jobs.png" alt="O Jobs Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Jobs</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/8 O learn.png" alt="O Learn Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Learn</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/9 O Govt.png" alt="O Govt Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Govt</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
+        <div class="company-section">
+            <img src="./images/tools/10 O Fang.png" alt="O Fang Logo" class="company-logo">
+            <div class="company-details">
+                <div class="company-name">O Fang</div>
+                <div class="company-description"></div>
+            </div>
+        </div>
     </section>
     <footer class="footer">
-        <div class="footer-image"><img class="mr" src="./images/logo.jpg" alt="logo">
-            <div><span class="footer-hidden">O</span>RCHID</div>
+        <div class="footer-image">
+            <!-- <img class="mr" src="./images/logo.jpg" alt="logo"> -->
+            <!-- <div><span class="footer-hidden">O</span>RCHID</div> -->
+            <div>ORCHID</div>
         </div>
         <div class="location">
-            <div class="location-list">
+            <!-- <div class="location-list">
                 <div class="location-item">N1 Highway, Accra</div>
                 <div class="location-item">Accra Ghana</div>
-            </div>
+            </div> -->
             <div class="location-list mt">
                 <div class="location-item"><a href="#">us@otitl.com</a></div>
-                <div class="location-item">+1 (603) 322-0064</div>
+                <div class="location-item">+1 603 322-0915</div>
             </div>
         </div>
     </footer>
