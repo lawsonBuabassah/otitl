@@ -28,87 +28,38 @@
     <meta name="twitter:description"
         content="&quot;Diversify. But carve out 10 to 20 percent for the most unloved part of the market: Emerging Markets Value&quot;, Robert D Annott. To carve out in Africa, partner with DreamBrıdge." />
     <meta name="twitter:image" content="./images/logo.jpg" />
-    <style>
-        .company-section {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
 
-        .company-section:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .company-logo {
-            max-width: 150px;
-            max-height: 150px;
-            width: auto;
-            height: auto;
-            margin-right: 20px;
-            border-radius: 50%;
-        }
-
-        .company-details {
-            flex-grow: 1;
-        }
-
-        .company-name {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .company-description {
-            font-size: 16px;
-            color: #555;
-        }
-
-        @media (max-width: 768px) {
-            .company-section {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .company-logo {
-                margin: 0 auto 20px auto;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .company-name {
-                font-size: 20px;
-            }
-
-            .company-description {
-                font-size: 14px;
-            }
-        }
-        a{
-            text-decoration: none;
-            color: #555;
-        }
-
-        .main{
-            overflow: auto;
-        }
-        .company-section > img{
-            width: 70px!important;
-        }
-
-        ::-webkit-scrollbar{
-            width: 1px;
-        }
-    </style>
 </head>
 
+<style>
+.ventures-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your layout */
+  margin: 0 auto;
+  position: relative;
+}
+
+.venture {
+  display: block;
+  flex: 0 0 50%; /* Adjust based on your needs */
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.venture-logo {
+  max-width: 100px; /* Adjust size as needed */
+  transition: transform 0.3s ease;
+}
+
+.venture:hover .venture-logo {
+  transform: scale(1.1); /* Simple hover effect */
+}
+
+</style>
 <body>
     <header class="header">
         <nav class="navbar">
@@ -143,98 +94,16 @@
             </div>
         </div>
     </header>
-    <section class="main" style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
-        <div class="company-section">
-            <img src="./images/bridgeborders.jpg" alt="Fledge Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">Fledge</div>
-                <!-- <div class="company-description">Tech & finance recruiting platform</div> -->
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/bridgeborders.jpg" alt="Company Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">Scaling @ <a href="http://gofledge.net">gofledge.net</a></div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/bridgeborders.jpg" alt="Company Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">Backing @ <a href="http://akilli.ai">akilli.ai</a></div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/1 O Analyst.png" alt="O Analyst Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Analyst</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/2 O Properties.png" alt="O Properties Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Properties</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/3 O News.png" alt="O News Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O News</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/4 O Cars.png" alt="Cars Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Cars</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/5 O Tech.png" alt="O Tech Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Tech</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/6 O pliances.png" alt="O pliances Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Pliances</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/7 O Jobs.png" alt="O Jobs Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Jobs</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/8 O learn.png" alt="O Learn Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Learn</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/9 O Govt.png" alt="O Govt Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Govt</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
-        <div class="company-section">
-            <img src="./images/tools/10 O Fang.png" alt="O Fang Logo" class="company-logo">
-            <div class="company-details">
-                <div class="company-name">O Fang</div>
-                <div class="company-description"></div>
-            </div>
-        </div>
+    <section class="main"
+        style="background-color: white; color: rgb(65, 65, 65); font-weight: bold; background-image: none;">
+        <div class="ventures-container">
+            <a href="https://www.bridgeborders.org/" class="venture" target="_blank">
+              <img src="./images/bridgeborders.jpg" alt="The Bridgeborder Logo" class="venture-logo">
+            </a>
+            <a href="https://ekke.ltd" class="venture" target="_blank">
+              <img src="./images/ekke.png" alt="Ekke Ltd Logo" class="venture-logo">
+            </a>
+          </div>          
     </section>
     <footer class="footer">
         <div class="footer-image">
